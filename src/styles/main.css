@@ -6,7 +6,6 @@ body{
     align-items: center;
     min-height: 100vh;
     background: linear-gradient(to right, #10644b,#083d68);
-    /* background: #10644b; */
     user-select: none;
 }
 
