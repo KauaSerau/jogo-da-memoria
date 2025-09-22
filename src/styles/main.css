@@ -1,0 +1,132 @@
+/* estilização geral */
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(to right, #10644b,#083d68);
+    /* background: #10644b; */
+    user-select: none;
+}
+
+/* estilização div container */
+
+.container{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    background: linear-gradient(310deg, #083d68 30%, #117048 70%);
+    padding: 40px 60px;
+}
+
+h2{
+    font-size: 3em;
+    color: #dddbdb;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+}
+
+.reset{
+    padding: 15px 20px;
+    width: 100%;
+    color: #000;
+    background-color: #fff;
+    border: none;
+    font-size: 1.5em;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.reset:focus{
+    color: #10644b;
+    background-color: #000000;
+}
+
+.game{
+    width: 430px;
+    height: 430px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    transform-style: preserve-3d;
+    perspective: 500px;
+}
+
+.item{
+    position: relative;
+    width: 100px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #d4d2d2;
+    font-size: 2.5em;
+    transform: rotateY(180deg);
+    transition: 0.25s;
+}
+
+.item::after{
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: #1f1f1f;
+    transition: 0.25s;
+    transform: rotateY(0deg);
+    backface-visibility: hidden;
+}
+
+.item.boxOpen{
+    transform: rotateY(0deg);
+}
+
+.boxOpen::after{
+    transform: rotateY(180deg);
+}
+
+
+/* Tela de vitória */
+
+.hidden {
+    display: none !important;
+}
+
+#victoryScreen {
+    position: fixed; 
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.85);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 999; 
+}
+
+.victory-content {
+    text-align: center;
+}
+
+.victory-content h2 {
+    color: #fff;
+    font-size: 3.5em;
+    margin-bottom: 30px;
+}
+
+.victory-content button {
+    padding: 15px 30px;
+    font-size: 1.5em;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    background-color: #fff;
+    color: #10644b;
+    font-weight: bold;
+    text-transform: uppercase;
+}

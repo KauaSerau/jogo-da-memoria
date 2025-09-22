@@ -1,0 +1,50 @@
+/* Large */
+@media (max-width: 1199.98px) {
+    .container {
+        gap: 35px; 
+    }
+}
+
+/* Medium */
+@media (max-width: 991.98px) {
+    .container {
+        padding: 30px 40px; 
+    }
+    h2 {
+        font-size: 2.8em;
+    }
+}
+
+/* Small */
+@media (max-width: 767.98px) {
+    .container {
+        padding: 20px;
+    }
+    h2 {
+        font-size: 2.5em;
+    }
+    .game {
+        width: 90vw;
+        height: 90vw;
+    }
+    .item {
+         width: calc(25% - 7.5px);
+        height: calc(25% - 7.5px);
+    }
+}
+
+/* Extra small  */
+@media (max-width: 575.98px) {
+    h2 {
+        font-size: 2em;
+        text-align: center;
+    }
+    .game {
+        gap: 8px;
+    }
+    .item {
+        width: calc(25% - 6px);
+        height: calc(25% - 6px);
+        font-size: 2em;
+    }
+}
