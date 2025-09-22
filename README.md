@@ -13,7 +13,7 @@ Este é um Jogo da Memória funcional e interativo, desenvolvido como um projeto
 
 Você pode testar o projeto em funcionamento através do link abaixo:
 
-**Acesse a demonstração ao vivo AQUI: https://[SEU-USUARIO].github.io/[NOME-DO-REPOSITORIO]/**
+**Acesse a demonstração ao vivo AQUI: https://kauaserau.github.io/jogo-da-memoria/
 
 ---
 
